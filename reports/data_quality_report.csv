@@ -1,0 +1,13 @@
+metric,value
+Total Rows,6362620.0
+Total Columns,11.0
+Missing Values,0.0
+Duplicate Rows,0.0
+Zero Amount Transactions,16.0
+Zero Amount Rate (%),0.000251
+Fraud Transactions,8213.0
+Fraud Rate (%),0.129082
+Flagged Transactions,16.0
+Flagged Transaction Rate (%),0.000251
+Flag Precision (%),100.0
+Flag Recall (%),0.194813
