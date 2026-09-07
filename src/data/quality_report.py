@@ -1,5 +1,7 @@
 import pandas as pd
 
+from pathlib import Path
+
 
 def generate_data_quality_report(df: pd.DataFrame) -> pd.DataFrame:
     """Generate a professional data quality summary report."""
@@ -88,7 +90,7 @@ def generate_data_quality_report(df: pd.DataFrame) -> pd.DataFrame:
 
 def save_data_quality_report(
     report: pd.DataFrame,
-    output_path: str = "reports/data_quality_report.csv"
+    output_path: str | Path 
 ) -> None:
     """Save the data quality report."""
 

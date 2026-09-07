@@ -2,6 +2,13 @@
 
 import pandas as pd
 
+from src.config import (
+    RAW_DATA_PATH,
+    PROCESSED_DATA_PATH,
+    QUALITY_REPORT_PATH
+)
+
+
 from src.data.profiling import profile_data
 from src.data.cleaning import clean_transactions
 
