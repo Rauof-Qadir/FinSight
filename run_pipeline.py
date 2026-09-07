@@ -26,6 +26,9 @@ PROCESSED_DATA_PATH = (
     "data/processed/transactions_cleaned.parquet"
 )
 
+QUALITY_REPORT_PATH = (
+    "reports/data_quality_report.csv"
+)
 
 def main():
 
@@ -49,7 +52,7 @@ def main():
     cleaned_df
 )
 
-    save_data_quality_report(quality_report)
+    save_data_quality_report(quality_report , QUALITY_REPORT_PATH)
 
     # Save cleaned dataset
     print("\nSaving cleaned dataset...")
