@@ -1,26 +1,41 @@
-# Virtual environment
 venv/
-
-# Python
+.venv/
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 
-# Jupyter
-.ipynb_checkpoints/
+.git/
+.gitignore
 
-# Data
-data/raw/*
-data/processed/*
-
-# Environment variables
 .env
 
-# IDE
+.ipynb_checkpoints/
+
+.pytest_cache/
+
 .vscode/
 
-# OS
-.DS_Store
-Thumbs.db
+*.log
 
-# Power BI temporary files
-*.tmp
+
+
+# models
+models/*
+!models/xgboost_final.joblib
+!models/.gitkeep
+
+# Data
+data/*
+!data/.gitkeep
+*.parquet
+*.csv
+!reports/*.csv
+
+
+
+# Python / Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
